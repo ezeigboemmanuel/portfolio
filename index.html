@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8b2516907e.js" crossorigin="anonymous"></script>
+    <title>EzeigboEmmanuel</title>
+</head>
+<body>
+    <div class="container">
+        <!--nav bar-->
+        <nav id="navbar">
+            <label id="logo"><a href="index.html" id="logo-link">EzeigboEmmanuel</a></label>
+            <ul id="nav-ul">
+                <li class="nav-li"><a href="#about" class="nav-link">ABOUT</a></li>
+                <li class="nav-li"><a href="#projects" class="nav-link">PROJECTS</a></li>
+                <li class="nav-li"><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <!--About-->
+        <div id="about">
+            <img src="emma2.jpg" alt="myimage" id = "round-img">
+            <h1 id="name">Ezeigbo Emmanuel</h1>
+            <p id="dev">A Front-end Developer</p>
+            <p id="dev-text">fascinated about new technologies and always willing to learn more.</p>
+            <p id="email"><a href="mailto:ezeigboemmanuel2@gmail.com" id = "email-link"><i class="fas fa-envelope"></i> ezeigboemmanuel2@gmail.com</a></p>
+        </div>
+
+        <!--Projects-->
+        <div id="projects">
+            <p id="pro-title">RECENT WORKS</p>
+            <div id="flex-container">
+                <div>
+                    <div class="box"></div>
+                    <p id="pro-text">Website</p>
+                    <p id="pro-text">Html | Css | Javascript</p>
+                    <div class="box"></div>
+                    <p id="pro-text">Website</p>
+                    <p id="pro-text">Html | Css | Javascript</p>
+                </div>
+                <div>
+                    <div class="box"></div>
+                    <p id="pro-text">Website</p>
+                    <p id="pro-text">Html | Css | Javascript</p>
+                    <div class="box"></div>
+                    <p id="pro-text">Website</p>
+                    <p id="pro-text">Html | Css | Javascript</p>
+                </div>
+            </div>
+            <div id="btn">
+                <button id="git-btn"><a href = "https://github.com/ezeigboemmanuel">See more on Github&#x27F6</a></button>
+            </div>
+        </div>
+        <hr>
+
+        <!--Contact-->
+        <div id="contact">
+            <p id="contact-text">CONTACT ME</p>
+            <div id="flex-form">
+                <form id="form" onsubmit="sendEmail(); reset(); return false">
+                    <input type="email" id="contact-email" placeholder="Email" required>
+                    <textarea name="text" id="textarea" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <button id="send">SEND MESSAGE</button>
+                </form>
+            </div>
+
+            <div id="small-con">
+                <div><p id = "number"><a href = "tel:09038898018" id = "num-link"><i class="fab fa-whatsapp"></i> 09038898018</a></p></div>
+                <div>
+                    <div><p id="small-text">FOLLOW ME</p></div>
+                    <div id = "icon-div">
+                        <div class="icon"><a href = "https://web.facebook.com/charles.ezeigbo.5" class = "icon-link"><i class="fab fa-facebook-f"></i></a></div>
+                        <div class="icon"><a href = "https://twitter.com/thecodinglord" class = "icon-link"><i class="fab fa-twitter"></i></a></div>
+                        <div class="icon"><a href = "https://github.com/ezeigboemmanuel" class = "icon-link"><i class="fab fa-github"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js">
+    </script>
+</body>
+</html>
