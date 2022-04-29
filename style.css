@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 60px;
+}
+
+#nav-ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-li{
+    margin-right: 50px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    padding: 20px 5px;
+}
+.nav-link:hover{
+    border-bottom: white 3px solid;
+}
+#logo-link{
+    text-decoration: none;
+    color: white;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    padding-left: 10px;
+}
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+
+
+
+
+
+#about{
+    height: 100vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+#email-link{
+    color: white;
+    text-decoration: none;
+}
+#email-link:hover{
+    text-decoration: underline;
+}
+#round-img{
+    width: 300px;
+    border-radius: 50%;
+}
+#name{
+    font-size: 40px;
+    padding: 20px 0;
+}
+#dev{
+    font-size: 25px;
+}
+#dev-text{
+    font-style: italic;
+    padding: 15px 0;
+}
+
+
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    margin: 10px;
+}
+.box:hover{
+    background-color: gray;
+}
+#flex-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#projects{
+    text-align: center;
+    background-color: white;
+    padding: 50px 0;
+}
+#pro-title{
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: 'Arial Narrow';
+}
+#btn{
+    margin-top: 20px;
+}
+#git-btn{
+    padding: 10px 10px;
+    border: 1px solid black;
+    background-color: black;
+    color:white;
+}
+#git-btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+#git-btn>a{
+    color: white;
+    text-decoration: none;
+}
+#git-btn>a:hover{
+    color: black;
+}
+
+
+#contact{
+    text-align: center;
+    background-color: white;
+    padding-top: 50px;
+}
+#contact-text{
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: 'Arial Narrow';
+}
+#flex-form{
+    display: flex;
+    justify-content: center;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+#contact-email{
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+    outline: none;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#textarea{
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+    outline: none;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#send{
+    border: 1px solid black;
+    background-color: black;
+    color:white;
+    padding: 15px 0;
+    margin-bottom: 40px;
+}
+#send:hover{
+    cursor: pointer;
+    background-color: white;
+    color:black;
+}
+
+.icon{
+    margin: 5px;
+    font-size: 25px;
+}
+#small-con{
+    height: 150px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon-link{
+    color: #f3f3f3;
+}
+.icon-link:hover{
+    color: white;
+}
+#icon-div{
+    display: flex;
+}
+#number{
+    font-size: 24px;
+}
+#num-link{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* MOBILE */
+@media (max-width: 500px){
+    #nav-ul{
+        display: none;
+        width: 100%;
+        font-size: 16px;
+    }
+    #logo{
+        font-size: 16px;
+    }
+    #name{
+        font-size: 30px;
+    }
+    #dev{
+        font-size: 18px;
+    }
+    #dev-text{
+        font-size: 13px;
+    }
+    #email{
+        font-size: 15px;
+    }
+    #round-img{
+        width: 200px;
+    }
+    #pro-title{
+        font-size: 20px;
+    }
+    #pro-text{
+        font-size: 14px;
+    }
+    #contact-text{
+        font-size: 20px;
+    }
+    #contact-email{
+        font-size: 16px;
+    }
+    #textarea{
+        font-size: 16px;
+    }
+    #send{
+        font-size: 13px;
+    }
+    #flex-form{
+        margin: 0 15px;
+    }
+    #small-text{
+        font-size: 17px;
+    }
+    .icon{
+        font-size: 16px;
+    }
+    #number{
+        font-size: 16px;
+    }
+    #small-con{
+        height: 100px;
+    }
+    .hamburger{
+        margin-right: 5px;
+        display: block;
+        cursor: pointer;
+    }
+    #nav-ul.show{
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        z-index: 3;
+        background-color: black;
+    }
+    .nav-li{
+        margin: 5px;
+        text-align: center;
+        width: 100%;
+    }
+    .nav-link{
+        padding: 0;
+    }
+}
